@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f5f5f5;
+    background-color: #000;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #000;
+    gap: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1 1 300px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    color: #B19A6B;
+}
+
+.logo-text h2 {
+    font-size: 1em;
+    margin: 0;
+    color: #f5f5f5;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    text-align: right;
+}
+
+.contact-info h2 {
+    font-size: 1.2em;
+    color: #B19A6B;
+    margin-bottom: 5px;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 1em;
+    color: #eee;
+}
+
+.contact-info .social-media a {
+    margin: 0 5px;
+    font-weight: bold;
+    color: #B19A6B;
+}
+
+/* Body Section */
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 2%;
+    background: rgba(205, 179, 139, 0.85); /* Soft transparent version of #CDB38B */
+    backdrop-filter: blur(4px); /* Adds subtle glass-like effect */
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.body-left,
+.body-right {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.body-left {
+    max-width: 600px;
+}
+
+.body-left h1 {
+    font-size: 2.5rem; /* ~40px */
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.body-left h2 {
+    font-size: 1.125rem; /* ~18px */
+    font-weight: 400;
+    color: #333;
+    margin: 0.25rem 0;
+    line-height: 1.5;
+}
+
+.map-link,
+.phone-number {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover,
+.phone-number:hover {
+    color: #000;
+}
+
+.body-right h1 {
+    font-size: 2rem; /* roughly 32px, responsive */
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1a1a1a; /* slightly softer than pure black */
+    line-height: 1.3;
+}
+
+.body-right p {
+    font-size: 1.125rem; /* 18px */
+    color: #333333; /* easier on the eyes than true black */
+    line-height: 1.6;
+    max-width: 600px; /* prevents text from stretching too wide */
+}
+
+/* Appointment Section */
+.appointment-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #000;
+}
+
+.appointment-section h2 {
+    font-size: 28px;
+    color: #B19A6B;
+    margin-bottom: 10px;
+}
+
+.appointment-section p {
+    font-size: 22px;
+    color: #f5f5f5;
+}

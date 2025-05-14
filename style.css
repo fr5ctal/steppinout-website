@@ -89,25 +89,40 @@ header {
   color: #B19A6B;
 }
 
-/* Body Section */
 .body {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px; /* Reduced gap between columns */
-  padding: 20px 2%;
+  justify-content: center; /* center horizontally */
+  padding: 40px 2%;
   background: rgba(205, 179, 139, 0.85);
   backdrop-filter: blur(4px);
 }
 
-.body-left,
-.body-right {
-  flex: 1 1 250px;
+.body-hours {
+  flex: 0 1 600px; /* prevent full width stretching */
   padding: 20px;
   background: #fdf6f2;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.body-hours h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a0522d;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.body-hours h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin: 0.5rem;
+  line-height: 1.5;
 }
 
 .menu-category {
@@ -120,27 +135,6 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.body-left h1,
-.body-right h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #a0522d;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.body-left h2 {
-  font-family: 'Roboto', sans-serif;  /* Clean sans-serif font for time */
-  font-size: 1.3rem;  /* Slightly larger for clarity */
-  font-weight: 400;
-  color: #2a2a2a;  /* Dark gray for readability */
-  margin: 0.5rem;
-  line-height: 1.5;
-}
 
 .map-link,
 .phone-number,

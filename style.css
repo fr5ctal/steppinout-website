@@ -1,170 +1,325 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #f5f5f5;
-    background-color: #000;
-    line-height: 1.6;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff8f5;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #f5f5f5;
+  text-decoration: none;
+  color: #f5f5f5;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Header */
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 20px;
-    background-color: #000;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: #000;
+  gap: 20px;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  flex: 1 1 300px;
 }
 
 .logo img {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
 }
 
+/* Title (h1) Styling */
 .logo-text h1 {
-    font-size: 2em;
-    margin: 0;
-    font-weight: bold;
-    color: #B19A6B;
+  font-size: 2.5rem;  /* Reduced font size for a balanced look */
+  margin: 0;  /* No additional margin */
+  font-weight: bold;
+  color: #F1C27D;  /* Soft gold color */
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: -0.5rem;  /* Reduced space between title and subtitle */
 }
 
+/* Subtitle (h2) Styling */
 .logo-text h2 {
-    font-size: 1em;
-    margin: 0;
-    color: #f5f5f5;
+  font-size: 1.5rem;  /* Adjusted font size to match h1 */
+  color: #F1C27D;  /* Soft gold color */
+  font-family: 'Playfair Display', serif;
+  margin: 0;  /* Removed any extra margins */
 }
 
 .contact-info {
-    flex: 1 1 300px;
-    text-align: right;
+  flex: 1 1 300px;
+  text-align: right;
 }
 
 .contact-info h2 {
-    font-size: 1.2em;
-    color: #B19A6B;
-    margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #B19A6B;
+  margin-bottom: 5px;
 }
 
 .contact-info p,
 .contact-info a {
-    font-size: 1em;
-    color: #eee;
+  font-size: 1em;
+  color: #eee;
 }
 
 .contact-info .social-media a {
-    margin: 0 5px;
-    font-weight: bold;
-    color: #B19A6B;
+  margin: 0 5px;
+  font-weight: bold;
+  color: #B19A6B;
 }
 
 /* Body Section */
 .body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 20px 2%;
-    background: rgba(205, 179, 139, 0.85); /* Soft transparent version of #CDB38B */
-    backdrop-filter: blur(4px); /* Adds subtle glass-like effect */
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Reduced gap between columns */
+  padding: 20px 2%;
+  background: rgba(205, 179, 139, 0.85);
+  backdrop-filter: blur(4px);
 }
 
 .body-left,
 .body-right {
-    flex: 1 1 300px;
-    padding: 20px;
+  flex: 1 1 250px;
+  padding: 20px;
+  background: #fdf6f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.body-left {
-    max-width: 600px;
+.menu-category {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.body-left h1 {
-    font-size: 2.5rem; /* ~40px */
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
+.body-left h1,
+.body-right h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a0522d;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .body-left h2 {
-    font-size: 1.125rem; /* ~18px */
-    font-weight: 400;
-    color: #333;
-    margin: 0.25rem 0;
-    line-height: 1.5;
+  font-family: 'Roboto', sans-serif;  /* Clean sans-serif font for time */
+  font-size: 1.3rem;  /* Slightly larger for clarity */
+  font-weight: 400;
+  color: #2a2a2a;  /* Dark gray for readability */
+  margin: 0.5rem;
+  line-height: 1.5;
 }
 
 .map-link,
-.phone-number {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #444;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.phone-number,
+.download-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .map-link:hover,
-.phone-number:hover {
-    color: #000;
-}
-
-.body-right h1 {
-    font-size: 2rem; /* roughly 32px, responsive */
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #1a1a1a; /* slightly softer than pure black */
-    line-height: 1.3;
+.phone-number:hover,
+.download-link:hover {
+  color: #000;
 }
 
 .body-right p {
-    font-size: 1.125rem; /* 18px */
-    color: #333333; /* easier on the eyes than true black */
-    line-height: 1.6;
-    max-width: 600px; /* prevents text from stretching too wide */
+  font-family: 'Didot', serif;
+  font-size: 1.2rem;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 600px;
 }
 
 /* Appointment Section */
 .appointment-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #000;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000;
 }
 
 .appointment-section h2 {
-    font-size: 28px;
-    color: #B19A6B;
-    margin-bottom: 10px;
+  font-size: 28px;
+  color: #B19A6B;
+  margin-bottom: 10px;
 }
 
 .appointment-section p {
-    font-size: 22px;
-    color: #f5f5f5;
+  font-size: 22px;
+  color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Tab Navigation */
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.tab-nav button {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-nav button:hover {
+  background-color: #eaeaea;
+}
+
+.tab-nav button.active {
+  background-color: #ff6f61; /* Choose your highlight color */
+  color: white;
+  border-color: #ff6f61;
+}
+
+.tab-nav button:focus {
+  outline: none;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 20px 20px;
+  background-color: #fdf6f2;
+  border-top: 2px solid #f0dcdc;
+}
+
+.menu-section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #a0522d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-category {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-category.active {
+  display: block;
+}
+
+.menu-category h2 {
+  color: #c96d53;
+  border-bottom: 1px solid #f0dcdc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.menu-category h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  background-color: #fdfdfd;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.menu-category strong {
+  color: #b76e79; /* A soft rose-pink color often used in beauty branding */
+}
+
+.menu-category ul {
+  padding-left: 0;
+}
+
+.menu-category li {
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.menu-category li strong {
+  font-weight: 600;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .menu-category li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

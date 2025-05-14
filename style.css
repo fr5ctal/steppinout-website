@@ -48,7 +48,7 @@ header {
 
 /* Title (h1) Styling */
 .logo-text h1 {
-  font-size: 2.5rem;  /* Reduced font size for a balanced look */
+  font-size: 2rem;  /* Reduced font size for a balanced look */
   margin: 0;  /* No additional margin */
   font-weight: bold;
   color: #F1C27D;  /* Soft gold color */
